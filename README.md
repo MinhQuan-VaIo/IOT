@@ -1,85 +1,71 @@
 # 🌤️ WeatherApp
 
-**WeatherApp** là một ứng dụng web sử dụng ASP.NET Core Razor Pages, cho phép người dùng tra cứu thông tin thời tiết của bất kỳ thành phố nào thông qua API từ OpenWeatherMap. Giao diện hiện đại, dễ sử dụng và xử lý lỗi thân thiện.
+**WeatherApp** is a web application built with ASP.NET Core Razor Pages that allows users to retrieve weather information for any city using the OpenWeatherMap API. It features a modern, responsive UI and user-friendly error handling.
 
 ---
 
-## 🚀 Tính năng chính
+## 🚀 Key Features
 
-- 🔍 **Tra cứu thời tiết**: Nhập tên thành phố để lấy dữ liệu thời tiết như nhiệt độ, độ ẩm, tốc độ gió và mô tả thời tiết.
-- 📱 **Giao diện responsive**: Thiết kế bằng Bootstrap 5.3, hiển thị tốt trên cả máy tính và thiết bị di động.
-- ⚠️ **Xử lý lỗi thân thiện**: Cảnh báo rõ ràng khi nhập sai tên thành phố hoặc có lỗi từ API.
-- 🧾 **Ghi log**: Ghi lại phản hồi API và lỗi để dễ kiểm tra khi debug.
+- **Weather Search**: Enter a city name to fetch weather data such as temperature, humidity, wind speed, and description.
+- **Responsive Design**: Built with Bootstrap 5.3 for compatibility across devices.
+- **Error Handling**: Displays clear messages for invalid city names or API issues.
+- **Logging**: Logs API responses and errors for easier debugging.
 
 ---
 
-## 🧪 Công nghệ sử dụng
+## 🧪 Technologies Used
 
 - **Backend**: ASP.NET Core 6.0 (C#), Razor Pages
 - **Frontend**: HTML, CSS, Bootstrap 5.3, JavaScript
 - **API**: [OpenWeatherMap](https://openweathermap.org/)
-- **Thư viện**: `System.Text.Json`, `Microsoft.Extensions.Logging`
+- **Libraries**: `System.Text.Json`, `Microsoft.Extensions.Logging`
 
 ---
 
-## 💻 Yêu cầu hệ thống
+## ▶️ Running the Application
 
-- .NET SDK **6.0 trở lên** – [Tải tại đây](https://dotnet.microsoft.com/download)
-- IDE đề xuất: **Visual Studio Code** với extension C#
-- API Key từ OpenWeatherMap – [Đăng ký miễn phí tại đây](https://openweathermap.org/)
-- Hệ điều hành: Windows, macOS hoặc Linux
-
----
-
-
-## ▶️ Chạy ứng dụng
-
-### 1. Build dự án
+### 1. Build the Project
 ```bash
 dotnet build
 ```
 
-### 2. Chạy ứng dụng
+### 2. Run the Application
 ```bash
 dotnet run
 ```
 
-Ứng dụng sẽ chạy tại địa chỉ `http://localhost:5272` (hoặc cổng khác tùy hệ thống – xem terminal khi chạy).
+The application will be available at `http://localhost:5272` (or another port as shown in your terminal).
 
 ---
 
-## 🧪 Sử dụng
+## 🧪 How to Use
 
-### 🌍 Tìm kiếm:
-- Nhập tên thành phố (ví dụ: `Hà Nội`, `Tokyo`) vào ô tìm kiếm.
-- Nhấn **Search** để nhận kết quả thời tiết.
+### 🌍 Search:
+- Enter a city name (e.g., `Hà Nội`, `Tokyo`) in the search box.
+- Click **Search** to fetch the weather data.
 
-### 📊 Kết quả hiển thị:
-- Tên thành phố và quốc gia
-- Nhiệt độ (°C)
-- Mô tả thời tiết (ví dụ: "clear sky")
-- Độ ẩm (%)
-- Tốc độ gió (m/s)
+### 📊 Displayed Results:
+- City and country
+- Temperature (°C)
+- Weather description (e.g., "clear sky")
+- Humidity (%)
+- Wind speed (m/s)
 
-### ⚠️ Xử lý lỗi:
-- Hiển thị thông báo lỗi khi nhập sai thành phố hoặc API lỗi.
-
----
-
-## 📚 Thông tin tác giả
-
-- **Bài tập**: Exercise 2 – API Integration and Dynamic Data Processing  
-- **Học phần**: Thực tập chuyên ngành – HK243  
-- **Ngôn ngữ**: C# (ASP.NET Core)  
-- **Mục đích**: Phục vụ học tập và nộp bài
+### ⚠️ Error Handling:
+- Displays a warning message if the city name is invalid or if the API fails.
 
 ---
 
-## 📜 Giấy phép
 
-> Dự án này được phát triển cho mục đích học tập, không có giấy phép thương mại hoặc phân phối.
+## 📚 Author Info
+
+- **Assignment**: Exercise 2 – API Integration and Dynamic Data Processing  
+- **Course**: Internship (HK243)  
+- **Language**: C# (ASP.NET Core)  
+- **Purpose**: Educational use and assignment submission
 
 ---
 
-## 📸 (Tuỳ chọn) Ảnh minh hoạ
-> ![Demo Screenshot](./screenshot.png)
+## 📜 License
+
+> This project was developed for educational purposes and does not carry any commercial or distribution license.
